@@ -1,7 +1,18 @@
+import Navbar from "./components/Navbar/Navbar";
+import Filters from "./components/Filters/Filters";
+import ProductsList from "./components/ProductsList/ProductsList";
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
-      <h2>Flipkart Machine Code</h2>
+      <Navbar />
+      <main className="section">
+        <section className="section-center products-page">
+          <Filters />
+          <ProductsList />
+        </section>
+      </main>
     </div>
   );
 }
