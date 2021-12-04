@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import { FilterContext } from "../../context/filter-context";
 
@@ -8,9 +8,13 @@ const ProductsList = () => {
   const { filteredProducts } = useContext(FilterContext);
   return (
     <div className="products-list">
-      {filteredProducts.map((product) => (
-        <ProductCard key={product.id} {...product} />
-      ))}
+      {filteredProducts.length > 0 ? (
+        filteredProducts.map((product) => (
+          <ProductCard key={product.id} {...product} />
+        ))
+      ) : (
+        <p>Sorry No such Product exists, Clear Filters and Try Again</p>
+      )}
     </div>
   );
 };
