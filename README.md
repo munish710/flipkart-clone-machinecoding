@@ -1,3 +1,3 @@
-# Flipkart CLone Machine Code
+# Flipkart Clone Machine Code
 
-This is a minimal Flipkart produc page clone that was time boxed to be completed in 3 hours
+This is a minimal Flipkart product page clone that was time boxed to be completed in 3 hours
